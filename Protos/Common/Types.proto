@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Protos.Common";
+
+message Void {} 
+
+message Double 
+{
+  double value = 1;
+}

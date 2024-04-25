@@ -1,0 +1,16 @@
+﻿syntax = "proto3";
+
+import "Common/Types.proto";
+import "SensorTypeDetection/RecordingSystemType.proto";
+
+option csharp_namespace = "Protos.SensorTypeDetection";
+
+service SensorTypeDetectionService 
+{
+  rpc GetSensorType(Void) returns (SensorTypeResponse);
+}
+
+message SensorTypeResponse
+{
+  RecordingSystemType recSysType = 1;
+}

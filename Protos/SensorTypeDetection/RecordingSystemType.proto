@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "Protos.SensorTypeDetection";
+
+enum RecordingSystemType
+{
+	Unknown = 0;
+	Generic = 6;
+	PavApp = 10;
+	HyperionStandalone = 14;
+	GenericLidarWithMfc = 15;
+	Rcd40 = 18;
+	CityMapper2 = 19;
+    BathyMapper = 20;
+}
